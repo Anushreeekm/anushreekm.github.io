@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./styles.css" type="text/css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        </style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+</head>
+<body>
+  <div class="container-fluid" >
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                  <img src="data:image/png;base64,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" width="30" height="30" class="d-inline-block align-top" alt="">
+                  Anushree K M
+                </a>
+              
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Works.html">Works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./About.html">About</a>
+                </li>
+               </ul>
+               </nav>
+              <div class="container-fluid ">
+                <div class="row ">
+                    <div class="col-6 text-center" >
+                        <image class="image-fluid mt-5" src="https://images.unsplash.com/photo-1665111159866-5a84d43476a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=450&q=80" alt="picture"/></image>
+                    </div>
+                    <div class="col-6">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Hello!</h1>
+                            <p class="lead">I’m final year graduate in Electronics 
+                                and communication engineering ,
+                                concentrating on developing web 
+                                applications.</p>
+                                
+                            <hr class="my-4">
+                            <p>Wanna explore more?</p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Let's Talk</a>
+                          </div>
+                    </div>
+                </div>
+              </div>
+              
+            
+        </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col text-center">
+            <div class="footer">
+                <p><span class="material-symbols-outlined">
+                    phone_callback:<a href="tel:9742903325">9742903325</a>
+                    </span></p>
+               <p><class class="material-symbols-outlined">
+                mail:<a href="mail to:anushree1ga19ec020@gmail.com">anushree1ga19ec020@gmail.com</a></class></p>
+               <p><span class="material-symbols-outlined">
+                copyright
+                </span>copyrights@anushree</p>
+            </div>
+        </div>
+        
+    </div>
+  </div>  
+</body>
+</html>
